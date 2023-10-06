@@ -10,7 +10,7 @@
 			<height>80</height>
 			<texture border="0,0,0,2">header.png</texture>
 		</control>
-		<control type="button">
+		<!--control type="button">
 			<description>Home Button</description>
 			<posx>22</posx>
 			<posy>2</posy>
@@ -21,16 +21,20 @@
 			<texturefocus></texturefocus>
 			<onclick>Dialog.Close(all)</onclick>
 			<onclick>ActivateWindow(Home)</onclick>
-		</control>
+		</control-->
 		<control type="label">
+			<posx>22</posx>
+			<posy>2</posy>
 			<description>System Time</description>
-			<height>200</height>
+			<height>75</height>
 			<width>400</width>
-			<font>font70_title</font>
+			<font>font38_title</font>
 			<textcolor>white</textcolor>
 			<align>left</align>
 			<aligny>center</aligny>
 			<label>$INFO[System.Time]</label>
+			<onclick>Dialog.Close(all)</onclick>
+			<onclick>ActivateWindow(Home)</onclick>
 		</control>
 		<control type="group">
 			<posx>100</posx>

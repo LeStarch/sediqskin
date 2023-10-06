@@ -241,7 +241,7 @@
 				<description>System Time</description>
 				<height>70</height>
 				<width>400</width>
-				<font>font70_title</font>
+				<font>font38_title</font>
 				<textcolor>white</textcolor>
 				<align>right</align>
 				<aligny>center</aligny>
@@ -503,17 +503,17 @@
 	</include>
 	<include name="CommonNowPlaying">
 		<control type="group">
-			<posx>300</posx>
-			<posy>0</posy>
+			<posx>0</posx>
+			<posy>10</posy>
 			<include>VisibleFadeEffect</include>
 			<include>16x9_xPos_Relocation</include>
 			<visible>Player.HasMedia + ![Window.IsVisible(busydialog) | Window.IsVisible(Notification) | Window.IsVisible(volumebar)]</visible>
 			<control type="button">
 				<description>Volume Button</description>
-				<posx>13</posx>
-				<posy>20</posy>
-				<width>40</width>
-				<height>40</height>
+				<posx>0</posx>
+				<posy>10</posy>
+				<width>80</width>
+				<height>80</height>
 				<label></label>
 				<texturenofocus>osd_volume.png</texturenofocus>
 				<texturefocus colordiffuse="blue">osd_volume.png</texturefocus>
@@ -521,10 +521,10 @@
 			</control>
 			<control type="togglebutton">
 				<description>Play Button</description>
-				<posx>77</posx>
-				<posy>20</posy>
-				<width>40</width>
-				<height>40</height>
+				<posx>102</posx>
+				<posy>0</posy>
+				<width>80</width>
+				<height>80</height>
 				<label></label>
 				<texturefocus colordiffuse="blue">osd_pause.png</texturefocus>
 				<texturenofocus>osd_pause.png</texturenofocus>
@@ -534,31 +534,32 @@
 				<onclick>PlayerControl(Play)</onclick>
 			</control>
 			<control type="group">
+				<posx>204</posx>
 				<visible>!Window.IsVisible(1112)</visible>
 				<control type="progress">
 					<description>Progressbar</description>
-					<posx>130</posx>
-					<posy>73</posy>
-					<width>420</width>
-					<height>5</height>
+					<posx>0</posx>
+					<posy>40</posy>
+					<width>872</width>
+					<height>36</height>
 					<info>Player.Progress</info>
 					<texturebg colordiffuse="grey3">white.png</texturebg>
 					<midtexture colordiffuse="blue">white.png</midtexture>
 				</control>
 				<control type="button">
-					<posx>140</posx>
-					<posy>0</posy>
-					<width>400</width>
-					<height>80</height>
+					<posx>0</posx>
+					<posy>40</posy>
+					<width>872</width>
+					<height>36</height>
 					<texturefocus></texturefocus>
 					<texturenofocus></texturenofocus>
 					<onclick condition="Player.HasAudio">ActivateWindow(Visualisation)</onclick>
 					<onclick condition="Player.HasVideo">ActivateWindow(FullscreenVideo)</onclick>
 				</control>
 				<control type="fadelabel">
-					<posx>134</posx>
+					<posx>4</posx>
 					<posy>16</posy>
-					<width>412</width>
+					<width>864</width>
 					<height>20</height>
 					<scrollout>false</scrollout>
 					<pauseatend>3000</pauseatend>
@@ -569,9 +570,9 @@
 					<textcolor>blue</textcolor>
 				</control>
 				<control type="fadelabel">
-					<posx>134</posx>
+					<posx>4</posx>
 					<posy>45</posy>
-					<width>412</width>
+					<width>864</width>
 					<height>15</height>
 					<scrollout>false</scrollout>
 					<pauseatend>3000</pauseatend>
@@ -583,9 +584,9 @@
 					<visible>Player.HasAudio</visible>
 				</control>
 				<control type="fadelabel">
-					<posx>134</posx>
+					<posx>4</posx>
 					<posy>45</posy>
-					<width>412</width>
+					<width>864</width>
 					<height>15</height>
 					<scrollout>false</scrollout>
 					<pauseatend>3000</pauseatend>
@@ -597,9 +598,9 @@
 					<visible>Player.HasVideo + VideoPlayer.Content(Movies)</visible>
 				</control>
 				<control type="fadelabel">
-					<posx>134</posx>
+					<posx>30</posx>
 					<posy>45</posy>
-					<width>412</width>
+					<width>864</width>
 					<height>15</height>
 					<scrollout>false</scrollout>
 					<pauseatend>3000</pauseatend>
@@ -611,9 +612,9 @@
 					<visible>Player.HasVideo + VideoPlayer.Content(Episodes)</visible>
 				</control>
 				<control type="fadelabel">
-					<posx>134</posx>
+					<posx>30</posx>
 					<posy>45</posy>
-					<width>412</width>
+					<width>864</width>
 					<height>15</height>
 					<scrollout>false</scrollout>
 					<pauseatend>3000</pauseatend>
@@ -627,10 +628,10 @@
 			</control>
 			<control type="button">
 				<description>Next Button</description>
-				<posx>563</posx>
-				<posy>20</posy>
-				<width>40</width>
-				<height>40</height>
+				<posx>1102</posx>
+				<posy>0</posy>
+				<width>80</width>
+				<height>80</height>
 				<label></label>
 				<texturenofocus>osd_next.png</texturenofocus>
 				<texturefocus colordiffuse="blue">osd_next.png</texturefocus>
@@ -638,10 +639,10 @@
 			</control>
 			<control type="button">
 				<description>Stop Button</description>
-				<posx>627</posx>
-				<posy>20</posy>
-				<width>40</width>
-				<height>40</height>
+				<posx>1204</posx>
+				<posy>0</posy>
+				<width>80</width>
+				<height>80</height>
 				<label></label>
 				<texturenofocus>osd_stop.png</texturenofocus>
 				<texturefocus colordiffuse="blue">osd_stop.png</texturefocus>

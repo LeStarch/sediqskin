@@ -14,7 +14,19 @@
 			<aspectratio>scale</aspectratio>
 			<fadetime>FanartCrossfadeTime</fadetime>
 		</control>
-		<control type="visualisation" id="2">
+		<control type="label">
+			<description>time</description>
+			<posx>20</posx>
+			<posy>0</posy>
+			<include>ScreenWidth</include>
+			<height>960</height>
+			<font>font80_title</font>
+			<textcolor>white</textcolor>
+			<align>left</align>
+			<aligny>center</aligny>
+			<label>$INFO[System.Time]</label>
+		</control>
+		<control type="visualisation" id="3">
 			<description>visualisation</description>
 			<posx>0</posx>
 			<posy>0</posy>
