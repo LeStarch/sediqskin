@@ -22,18 +22,17 @@
 			<onclick>Dialog.Close(all)</onclick>
 			<onclick>ActivateWindow(Home)</onclick>
 		</control>
-		<control type="label">
-			<description>System Time</description>
-			<height>200</height>
-			<width>400</width>
-			<font>font70_title</font>
-			<textcolor>white</textcolor>
-			<align>left</align>
-			<aligny>center</aligny>
-			<label>$INFO[System.Time]</label>
+		<control type="image">
+			<description>Kodi Logo</description>
+			<posx>22</posx>
+			<posy>16</posy>
+			<width>160</width>
+			<height>44</height>
+			<texture>special://xbmc/media/vendor_logo.png</texture>
+			<include>VisibleFadeEffect</include>
 		</control>
 		<control type="group">
-			<posx>100</posx>
+			<posx>300</posx>
 			<posy>10</posy>
 			<include>VisibleFadeEffect</include>
 			<include>16x9_xPos_Relocation</include>
@@ -42,15 +41,15 @@
 				<description>Volume Button</description>
 				<posx>0</posx>
 				<posy>10</posy>
-				<width>80</width>
-				<height>80</height>
+				<width>40</width>
+				<height>40</height>
 				<label></label>
 				<texturenofocus>osd_volume.png</texturenofocus>
 				<texturefocus colordiffuse="blue">osd_volume.png</texturefocus>
 				<onclick>ActivateWindow(1112)</onclick>
 			</control>
 			<control type="group">
-				<posx>104</posx>
+				<posx>64</posx>
 				<include>VisibleFadeEffect</include>
 				<visible>!Window.IsVisible(1112)</visible>
 				<control type="label">
@@ -65,7 +64,7 @@
 				<control type="label">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>872</width>
+					<width>552</width>
 					<height>32</height>
 					<font>font20_title</font>
 					<align>center</align>
@@ -73,7 +72,7 @@
 					<label>$VAR[SeekLabel]</label>
 				</control>
 				<control type="label">
-					<posx>872</posx>
+					<posx>552</posx>
 					<posy>0</posy>
 					<width>180</width>
 					<height>32</height>
@@ -85,9 +84,9 @@
 				<control type="progress">
 					<description>Progressbar</description>
 					<posx>0</posx>
-					<posy>40</posy>
-					<width>872</width>
-					<height>36</height>
+					<posy>34</posy>
+					<width>552</width>
+					<height>24</height>
 					<info>Player.ProgressCache</info>
 					<midtexture colordiffuse="grey2">white.png</midtexture>
 					<texturebg colordiffuse="grey3">white.png</texturebg>
@@ -95,18 +94,57 @@
 				<control type="progress">
 					<description>Progressbar</description>
 					<posx>0</posx>
-					<posy>40</posy>
-					<width>872</width>
-					<height>36</height>
+					<posy>34</posy>
+					<width>552</width>
+					<height>24</height>
 					<info>Player.Progress</info>
 					<texturebg colordiffuse="002C2C2C">white.png</texturebg>
+				</control>
+				<control type="ranges">
+					<description>EdlEdits</description>
+					<posx>0</posx>
+					<posy>46</posy>
+					<width>552</width>
+					<height>10</height>
+					<info>Player.Editlist</info>
+					<texturebg border="3" colordiffuse="00FFFFFF">white.png</texturebg>
+					<lefttexture>white.png</lefttexture>
+					<midtexture colordiffuse="FFFF0000">white.png</midtexture>
+					<righttexture>white.png</righttexture>
+				</control>
+				<control type="ranges">
+					<description>Cuts</description>
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>552</width>
+					<height>8</height>
+					<info>Player.Cuts</info>
+					<righttexture>red.png</righttexture>
+				</control>
+				<control type="ranges">
+					<description>SceneMarkers</description>
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>552</width>
+					<height>8</height>
+					<info>Player.SceneMarkers</info>
+					<righttexture>white.png</righttexture>
+				</control>
+				<control type="ranges">
+					<description>Chapters</description>
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>552</width>
+					<height>8</height>
+					<info>Player.Chapters</info>
+					<righttexture>white.png</righttexture>
 				</control>
 				<control type="slider" id="87">
 					<description>Seek Slider</description>
 					<posx>0</posx>
 					<posy>30</posy>
-					<width>872</width>
-					<height>56</height>
+					<width>552</width>
+					<height>32</height>
 					<action>seek</action>
 					<texturesliderbar></texturesliderbar>
 					<textureslidernib></textureslidernib>
@@ -115,13 +153,13 @@
 			</control>
 		</control>
 		<control type="group">
-			<posx>130r</posx>
+			<posx>70r</posx>
 			<posy>0</posy>
 			<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>
 				<width>2</width>
-				<height>138</height>
+				<height>78</height>
 				<texture border="2">separator.png</texture>
 				<colordiffuse>FF464646</colordiffuse>
 			</control>
@@ -129,8 +167,8 @@
 				<description>Close Button</description>
 				<posx>4</posx>
 				<posy>9</posy>
-				<width>120</width>
-				<height>120</height>
+				<width>60</width>
+				<height>60</height>
 				<font></font>
 				<onclick>Back</onclick>
 				<texturefocus>icon_dialog_close.png</texturefocus>
@@ -281,32 +319,32 @@
 			</control>
 		</control>
 		<control type="group">
-			<posy>130r</posy>
+			<posy>80r</posy>
 			<control type="grouplist">
 				<posx>0</posx>
 				<posy>15</posy>
 				<width>ScreenWidth</width>
-				<height>100</height>
+				<height>50</height>
 				<align>center</align>
 				<orientation>horizontal</orientation>
 				<itemgap>30</itemgap>
 				<control type="button">
-					<width>100</width>
-					<height>100</height>
+					<width>50</width>
+					<height>50</height>
 					<texturefocus colordiffuse="blue">osd_previous.png</texturefocus>
 					<texturenofocus>osd_previous.png</texturenofocus>
 					<onclick>PlayerControl(Previous)</onclick>
 				</control>
 				<control type="button">
-					<width>100</width>
-					<height>100</height>
+					<width>50</width>
+					<height>50</height>
 					<texturefocus colordiffuse="blue">osd_rewind.png</texturefocus>
 					<texturenofocus>osd_rewind.png</texturenofocus>
 					<onclick>PlayerControl(Rewind)</onclick>
 				</control>
 				<control type="togglebutton">
-					<width>100</width>
-					<height>100</height>
+					<width>50</width>
+					<height>50</height>
 					<texturefocus colordiffuse="blue">osd_pause.png</texturefocus>
 					<texturenofocus>osd_pause.png</texturenofocus>
 					<alttexturefocus colordiffuse="blue">osd_play.png</alttexturefocus>
@@ -315,29 +353,29 @@
 					<onclick>PlayerControl(Play)</onclick>
 				</control>
 				<control type="button">
-					<width>100</width>
-					<height>100</height>
+					<width>50</width>
+					<height>50</height>
 					<texturefocus colordiffuse="blue">osd_stop.png</texturefocus>
 					<texturenofocus>osd_stop.png</texturenofocus>
 					<onclick>PlayerControl(Stop)</onclick>
 				</control>
 				<control type="button">
-					<width>100</width>
-					<height>100</height>
+					<width>50</width>
+					<height>50</height>
 					<texturefocus colordiffuse="blue">osd_forward.png</texturefocus>
 					<texturenofocus>osd_forward.png</texturenofocus>
 					<onclick>PlayerControl(Forward)</onclick>
 				</control>
 				<control type="button">
-					<width>100</width>
-					<height>100</height>
+					<width>50</width>
+					<height>50</height>
 					<texturefocus colordiffuse="blue">osd_next.png</texturefocus>
 					<texturenofocus>osd_next.png</texturenofocus>
 					<onclick>PlayerControl(Next)</onclick>
 				</control>
 				<control type="togglebutton">
-					<width>100</width>
-					<height>100</height>
+					<width>50</width>
+					<height>50</height>
 					<texturefocus colordiffuse="blue">osd_record.png</texturefocus>
 					<texturenofocus>osd_record.png</texturenofocus>
 					<alttexturefocus colordiffuse="red">osd_record.png</alttexturefocus>

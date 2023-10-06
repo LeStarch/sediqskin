@@ -5,16 +5,25 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Main\n"
-"Report-Msgid-Bugs-To: https://github.com/xbmc/xbmc/issues/\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Kodi Translation Team\n"
-"Language-Team: Danish (Denmark) (http://www.transifex.com/projects/p/kodi-main/language/da_DK/)\n"
+"PO-Revision-Date: 2022-11-12 10:26+0000\n"
+"Last-Translator: Christian Gade <gade@kodi.tv>\n"
+"Language-Team: Danish <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-estouchy/da_dk/>\n"
+"Language: da_dk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: da_DK\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.14.2\n"
+
+msgctxt "Addon Summary"
+msgid "Skin for touchscreen devices"
+msgstr "Skin for berøringsfølsomme enheder"
+
+msgctxt "Addon Description"
+msgid "Skin designed to be used on touchscreen devices like tablets and smartphones"
+msgstr "Skin der er designet til brug på berøringsfølsomme enheder som f.eks. tablets og smartphones"
 
 msgctxt "#31002"
 msgid "Audio Settings"
@@ -34,7 +43,7 @@ msgstr "Visualiseringsindstillinger"
 
 msgctxt "#31006"
 msgid "Visualization Presets"
-msgstr "Forudindstillinger til Visualisering"
+msgstr "Forudindstillinger til visualisering"
 
 msgctxt "#31007"
 msgid "Context Menu"
@@ -46,7 +55,7 @@ msgstr "Arbejder..."
 
 msgctxt "#31011"
 msgid "Recent"
-msgstr "Nyligt"
+msgstr "Seneste"
 
 msgctxt "#31013"
 msgid "Movies"
@@ -56,29 +65,38 @@ msgctxt "#31014"
 msgid "Episodes"
 msgstr "Afsnit"
 
+msgctxt "#31015"
+msgid "Player info"
+msgstr "Information om afspiller"
+
 msgctxt "#31016"
 msgid "Albums"
 msgstr "Albummer"
 
+#. Label to show PVR info page
 msgctxt "#31017"
-msgid "PVR info"
-msgstr "PVR-information"
+msgid "PVR"
+msgstr "PVR"
 
+#. Label to show player info page
 msgctxt "#31018"
-msgid "Player process info"
-msgstr "Procesinformation for afspilning"
+msgid "Player"
+msgstr "Afspiller"
 
+#. Label to show video decoder name
 msgctxt "#31019"
 msgid "Video decoder"
-msgstr "Videodekoder"
+msgstr "Videoafkoder"
 
+#. Label to show the video pixel format
 msgctxt "#31020"
 msgid "Pixel format"
 msgstr "Pixelformat"
 
+#. Label to show the system memory usage
 msgctxt "#31021"
 msgid "System memory usage"
-msgstr "Hukommelsesforbrug"
+msgstr "Systemets hukommelsesforbrug"
 
 msgctxt "#31024"
 msgid "Page"
@@ -90,11 +108,23 @@ msgstr "Informationsliste"
 
 msgctxt "#31038"
 msgid "Login"
-msgstr "Brugernavn"
+msgstr "Login"
 
 msgctxt "#31039"
 msgid "Updated:"
 msgstr "Opdateret:"
+
+msgctxt "#31040"
+msgid "Select + X"
+msgstr "Select + X"
+
+msgctxt "#31041"
+msgid "Select + B"
+msgstr "Select + B"
+
+msgctxt "#31042"
+msgid "Select + Start"
+msgstr "Select + Start"
 
 msgctxt "#31043"
 msgid "PAUSED"
@@ -130,7 +160,7 @@ msgstr "Åbn playliste"
 
 msgctxt "#31056"
 msgid "Save playlist"
-msgstr "Gem afspilningsliste"
+msgstr "Gem playliste"
 
 msgctxt "#31057"
 msgid "Close playlist"
@@ -150,7 +180,7 @@ msgstr "Tilbage"
 
 msgctxt "#31201"
 msgid "Location"
-msgstr "Lokalitet"
+msgstr "Placering"
 
 msgctxt "#31202"
 msgid "View"
@@ -158,11 +188,11 @@ msgstr "Vis"
 
 msgctxt "#31300"
 msgid "Current Temp"
-msgstr "Temperatur Nu"
+msgstr "Nuværende temperatur"
 
 msgctxt "#31301"
 msgid "Last Updated"
-msgstr "Sidst Opdateret"
+msgstr "Sidst opdateret"
 
 msgctxt "#31303"
 msgid "Data provider"
@@ -170,7 +200,7 @@ msgstr "Dataleverandør"
 
 msgctxt "#31309"
 msgid "System Memory Used:"
-msgstr "System hukommelse ibrug:"
+msgstr "Systemets hukommelsesforbrug:"
 
 msgctxt "#31320"
 msgid "Last Logged In"
@@ -186,7 +216,7 @@ msgstr "Videomenu"
 
 msgctxt "#31356"
 msgid "Download Subtitles"
-msgstr "Hent Undertekster"
+msgstr "Hent undertekster"
 
 msgctxt "#31358"
 msgid "Teletext"
@@ -198,15 +228,56 @@ msgstr "Skinnets standard"
 
 msgctxt "#31391"
 msgid "Arial based"
-msgstr "Arialbaseret"
+msgstr "Baseret på Arial"
 
 msgctxt "#31400"
 msgid "Change the skin · Set language and region · Change file listing options · Set up a screensaver"
 msgstr "Skift skin · Vælg sprog og region · Skift indstillinger for filvisning · Opsæt en pauseskærm"
 
+# empty strings from id 31401 to 31404
+msgctxt "#31405"
+msgid "Configure & manage media sharing services · Configure & manage the weather service"
+msgstr "Konfigurer og administrer mediedelingstjenester · Konfigurer og administrer vejretjenesten"
+
+msgctxt "#31406"
+msgid "Configure display · Configure audio · Configure internet access · Configure power saving · Configure logging"
+msgstr "Konfigurer skærm · Konfigurer lyd · Konfigurer internetadgang · Konfigurer strømbesparelse · Konfigurer logføring"
+
+msgctxt "#31407"
+msgid "Manage your installed add-ons · Browse for and install add-ons from kodi.tv · Modify add-on settings"
+msgstr "Administrer dine installerede add-ons · Gennemse og installer add-ons fra kodi.tv · Tilpas indstillinger for add-ons"
+
+msgctxt "#31408"
+msgid "Configure actions that can be used during playback · Configure how media content is played"
+msgstr "Konfigurer handlinger, der kan bruges under afspilning · Konfigurer hvordan medieindhold afspilles"
+
+msgctxt "#31409"
+msgid "Configure library sources · Show the media lists display content · Configure how library lists are navigated"
+msgstr "Konfiguration af bibliotekilder · Vis medielisternes indholdsvisning · Konfigurer hvordan biblioteklister navigeres"
+
+msgctxt "#31410"
+msgid "Configure skin · Configure region · Configure control · Configure screensaver · Configure master lock"
+msgstr "Konfigurer skin · Konfigurer område · Konfigurer kontrol · Konfigurer pauseskærm · Konfigurer hovedlås"
+
+msgctxt "#31411"
+msgid "Configure your profiles · Set locking options · Enable login screen"
+msgstr "Konfigurer dine profiler · Angiv låsemuligheder · Aktiver loginskærm"
+
+msgctxt "#31412"
+msgid "Display system information · Hardware statistics · Check storage availability · View network configuration"
+msgstr "Vis systemoplysninger · Hardwarestatistik · Kontroller tilgængelighed af lagerplads · Se netværkskonfiguration"
+
 msgctxt "#31421"
 msgid "Select your Kodi user Profile[CR]to login and continue"
 msgstr "Vælg din Kodi brugerprofil[CR]for at logge ind og fortsætte"
+
+msgctxt "#31548"
+msgid "Home menu"
+msgstr "Hovedmenu"
+
+msgctxt "#31549"
+msgid "Home Add-ons"
+msgstr "Hovedmenuens add-ons"
 
 msgctxt "#31550"
 msgid "Backgrounds"
@@ -214,15 +285,39 @@ msgstr "Baggrunde"
 
 msgctxt "#31551"
 msgid "Add-on Shortcut"
-msgstr "Genvej til Addon"
+msgstr "Genvej til add-on"
+
+msgctxt "#31552"
+msgid "SYNC"
+msgstr "SYNC"
+
+msgctxt "#31553"
+msgid "Use Custom Background"
+msgstr "Anvend brugerdefineret baggrund"
+
+msgctxt "#31554"
+msgid "Background:"
+msgstr "Baggrund:"
+
+msgctxt "#31555"
+msgid "Configure TV settings · Change full screen info · Manage EPG data settings"
+msgstr "Konfigurer tv-indstillinger · Skift fuldskærmsinfo · Administrer dataindstillinger for EPG"
 
 msgctxt "#31556"
 msgid "Live TV"
-msgstr "Live TV"
+msgstr "Direkte tv"
 
 msgctxt "#31557"
 msgid "Hide video background"
 msgstr "Skjul videobaggrund"
+
+msgctxt "#31558"
+msgid "Hide visualization background"
+msgstr "Skjul visualiseringens baggrund"
+
+msgctxt "#31559"
+msgid "Channel settings"
+msgstr "Kanalindstillinger"
 
 msgctxt "#31560"
 msgid "Available groups"
@@ -230,15 +325,15 @@ msgstr "Tilgængelig grupper"
 
 msgctxt "#31561"
 msgid "Add Group"
-msgstr "Tilføj Gruppe"
+msgstr "Tilføj gruppe"
 
 msgctxt "#31562"
 msgid "Rename Group"
-msgstr "Omdøb Gruppe"
+msgstr "Omdøb gruppe"
 
 msgctxt "#31563"
 msgid "Delete Group"
-msgstr "Slet Gruppe"
+msgstr "Slet gruppe"
 
 msgctxt "#31564"
 msgid "Show hidden"
@@ -247,3 +342,97 @@ msgstr "Vis skjulte"
 msgctxt "#31565"
 msgid "Show deleted"
 msgstr "Vis slettede"
+
+# empty strings from id 31566 to 31599
+#. Label to show the video codec name
+msgctxt "#31600"
+msgid "Video codec"
+msgstr "Video-codec"
+
+#. Label to show the video resolution
+msgctxt "#31601"
+msgid "Video resolution"
+msgstr "Videoopløsning"
+
+#. Label to show the video aspect
+msgctxt "#31602"
+msgid "Video aspect"
+msgstr "Billedeformat"
+
+#. Label to show the video bitrate
+msgctxt "#31603"
+msgid "Video bitrate"
+msgstr "Video-bitrate"
+
+#. Label to show the audio codec name
+msgctxt "#31604"
+msgid "Audio codec"
+msgstr "Lyd-codec"
+
+#. Label to show the number of audio channels
+msgctxt "#31605"
+msgid "Audio channels"
+msgstr "Lydkanaler"
+
+#. Label to show the audio bitrate
+msgctxt "#31606"
+msgid "Audio bitrate"
+msgstr "Lydbitrate"
+
+#. Label to show the screen resolution
+msgctxt "#31607"
+msgid "Screen resolution"
+msgstr "Skærmopløsning"
+
+#. Label to show the system rendering speed
+msgctxt "#31608"
+msgid "System rendering speed"
+msgstr "Systemets renderingshastighed"
+
+#. Label to show the system CPU usage
+msgctxt "#31609"
+msgid "System CPU usage"
+msgstr "Systemets CPU-forbrug"
+
+#. Label to show the media (metadata) info page
+msgctxt "#31610"
+msgid "Media"
+msgstr "Medie"
+
+#. Label to show the system info page
+msgctxt "#31611"
+msgid "System"
+msgstr "System"
+
+# empty strings from id 31566 to 31899
+msgctxt "#31900"
+msgid "First Run"
+msgstr "Første kørsel"
+
+msgctxt "#31901"
+msgid "There are two things to know about navigating Estouchy"
+msgstr "Der er to ting at vide omkring navigeringen i Estouchy"
+
+msgctxt "#31902"
+msgid "The Kodi logo functions as a 'HOME' button. Whenever you touch it, you will be taken back to the home screen."
+msgstr "Kodi-logoet fungerer som en 'HOME'-knap. Hver gang du trykker på den, føres du tilbage til startskærmen."
+
+msgctxt "#31903"
+msgid "When you are playing audio or video, the item title will appear at the top of the screen. Touching it will take you to the fullscreen visualization or video window."
+msgstr "Når du afspiller lyd eller video, vises titlen øverst på skærmen. Hvis du trykker på den, kommer du til visualiseringen eller videovinduet i fuld skærm."
+
+msgctxt "#31904"
+msgid "Now Playing Title..."
+msgstr "Titel der afspilles nu..."
+
+#~ msgctxt "#31406"
+#~ msgid "Configure display · Configure audio · Configure internet access · Configure power saving· Configure logging"
+#~ msgstr "Konfigurer skærm · Konfigurer lyd · Konfigurer internetadgang · Konfigurer strømbesparelse · Konfigurer logføring"
+
+#~ msgctxt "#31017"
+#~ msgid "PVR info"
+#~ msgstr "PVR-information"
+
+#~ msgctxt "#31018"
+#~ msgid "Player process info"
+#~ msgstr "Information om afspilningsproces"

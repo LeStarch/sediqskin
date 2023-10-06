@@ -139,6 +139,13 @@
 			<align>center</align>
 			<aligny>center</aligny>
 		</control>
+		<control type="colorbutton" id="15">
+			<description>Default ColorButton</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<height>70</height>
+			<font>font25</font>
+		</control>
 		<control type="sliderex" id="13">
 			<description>Default Slider</description>
 			<height>70</height>
@@ -189,6 +196,12 @@
 				<width>200</width>
 				<include>ButtonInfoDialogsCommonValues</include>
 				<label>409</label>
+			</control>
+			<control type="button" id="20">
+				<description>Level Button</description>
+				<width>200</width>
+				<include>ButtonInfoDialogsCommonValues</include>
+				<onclick>SettingsLevelChange</onclick>
 			</control>
 		</control>
 	</controls>
